@@ -1,0 +1,124 @@
+/* Основні стилі */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f1c2e, #1c2a46, #ffffff);
+    color: #fff;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* Головна секція */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.phone-container {
+    perspective: 1000px;
+}
+
+.phone {
+    width: 250px;
+    transition: transform 0.5s ease;
+}
+
+/* Характеристики */
+.features {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #0f1c2e, #1c2a46);
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Особливості */
+.highlights {
+    padding: 50px 20px;
+}
+
+.highlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.highlight {
+    background: rgba(255,255,255,0.1);
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: opacity 1s ease, transform 0.8s ease;
+    opacity: 0;
+}
+
+/* Галерея */
+.gallery {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1c2a46, #0f1c2e);
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-images img {
+    width: 200px;
+    border-radius: 15px;
+    transition: transform 0.5s;
+}
+
+.gallery-images img:hover {
+    transform: rotateY(20deg) scale(1.05);
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f1c2e;
+}
+
+footer a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .feature-cards, .highlight-cards, .gallery-images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
