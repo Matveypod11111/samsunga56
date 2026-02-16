@@ -1,4 +1,3 @@
-// 3D обертання телефону при наведенні
 const phone = document.getElementById('phone');
 
 phone.addEventListener('mousemove', (e) => {
