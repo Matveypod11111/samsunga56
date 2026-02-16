@@ -3,68 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samsung A56</title>
+    <title>Samsung Galaxy A56 | Майбутнє вже тут</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
+    <nav class="navbar">
+        <div class="logo">SAMSUNG</div>
+        <ul class="nav-links">
+            <li><a href="#features">Особливості</a></li>
+            <li><a href="#specs">Характеристики</a></li>
+            <li><a href="#">Придбати</a></li>
+        </ul>
+    </nav>
+
     <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Galaxy A56</h1>
+            <p>Новий рівень потужності. Новий рівень стилю.</p>
+        </div>
         <div class="phone-container">
-            <img src="images/phone.png" alt="Samsung A56" class="phone" id="phone">
-        </div>
-        <h1>Samsung A56</h1>
-        <p>Інновації в кожній деталі</p>
-    </section>
-
-    <section class="features">
-        <h2>Характеристики</h2>
-        <div class="feature-cards">
-            <div class="card">
-                <img src="images/camera.png" alt="Камера">
-                <h3>Камера</h3>
-                <p>64 МП, нічний режим, AI-режими</p>
-            </div>
-            <div class="card">
-                <img src="images/screen.png" alt="Екран">
-                <h3>Екран</h3>
-                <p>6.5" Super AMOLED, 120Hz</p>
-            </div>
-            <div class="card">
-                <img src="images/cpu.png" alt="Процесор">
-                <h3>Процесор</h3>
-                <p>Octa-core, Snapdragon 8 Gen 2</p>
-            </div>
-            <div class="card">
-                <img src="images/battery.png" alt="Батарея">
-                <h3>Батарея</h3>
-                <p>4500 мАг, швидка зарядка</p>
+            <div class="phone-3d" id="phone">
+                <img src="https://images.samsung.com/is/image/samsung/p6pim/uk/galaxy-a55-5g/feature/galaxy-a55-5g-mo-top-design-v2.jpg" alt="Samsung A56">
             </div>
         </div>
     </section>
 
-    <section class="highlights">
-        <h2>Особливості</h2>
-        <div class="highlight-cards">
-            <div class="highlight">Тонкий корпус</div>
-            <div class="highlight">Яскравий AMOLED екран</div>
-            <div class="highlight">Супер швидкий процесор</div>
-            <div class="highlight">Довговічна батарея</div>
+    <section id="specs" class="specs-grid">
+        <div class="spec-card" data-aos="zoom-in">
+            <i class="icon">📷</i>
+            <h3>Камера 50 МП</h3>
+            <p>Нічна зйомка нового покоління.</p>
+        </div>
+        <div class="spec-card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="icon">⚡</i>
+            <h3>Exynos 1580</h3>
+            <p>Швидкість, яка вражає.</p>
+        </div>
+        <div class="spec-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="icon">🔋</i>
+            <h3>5000 мАг</h3>
+            <p>До 2-х днів роботи без підзарядки.</p>
         </div>
     </section>
 
-    <section class="gallery">
-        <h2>Галерея</h2>
-        <div class="gallery-images">
-            <img src="images/phone.png" alt="Samsung A56">
-            <img src="images/phone.png" alt="Samsung A56">
-            <img src="images/phone.png" alt="Samsung A56">
+    <section id="features" class="feature-highlight">
+        <div class="content" data-aos="fade-right">
+            <h2>Екран Super AMOLED</h2>
+            <p>120 Гц для неймовірної плавності кожного руху.</p>
+        </div>
+        <div class="image-box" data-aos="fade-left">
+            <div class="glass-effect">Яскравість до 1500 ніт</div>
         </div>
     </section>
 
     <footer>
-        <p>Офіційний сайт Samsung: <a href="https://www.samsung.com" target="_blank">www.samsung.com</a></p>
+        <p>© 2026 Samsung Electronics. Всі права захищені.</p>
+        <div class="footer-links">
+            <a href="https://www.samsung.com">Офіційний сайт</a>
+            <a href="#">Підтримка</a>
+        </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
